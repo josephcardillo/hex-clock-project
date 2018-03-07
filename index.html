@@ -5,13 +5,25 @@
     <title>h e x c l o c k</title>
   </head>
   <body>
-    <h1 class="hexclock">#hhmmss</h1>
+    <h1 class="hhmmss"></h1>
 
     <script type="text/javascript">
-      var hh = 00;
+      var hh = 1;
       var mm = 00;
       var ss = 00;
+      var clockFormat = hh, mm, ss;
+      var clockId = document.getElementsByClassName("hhmmss");
 
+      // function hexclock () {
+      //   console.log(clockId);
+      // }
+
+      for (var i = 0; i < 10; i++) {
+        console.log(hh++);
+      }
+
+
+      // setTimeout (hexclock,1000);
     </script>
   </body>
 </html>
