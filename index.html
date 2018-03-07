@@ -3,27 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>h e x c l o c k</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <h1 class="hhmmss"></h1>
 
     <script type="text/javascript">
       var hh = 1;
-      var mm = 00;
-      var ss = 00;
-      var clockFormat = hh, mm, ss;
+      var mm = 1;
+      var ss = 1;
+      var numSign = '#';
+      var clockFormat = [numSign,hh,mm,ss];
       var clockId = document.getElementsByClassName("hhmmss");
 
-      // function hexclock () {
-      //   console.log(clockId);
-      // }
-
-      for (var i = 0; i < 10; i++) {
-        console.log(hh++);
+      function hexclock () {
+        // var hh = today.getHours();
+        setTimeout(function () {
+          console.log(hh++);
+          i = 0;
+          i++;
+          if (hh < 6) {
+            hexclock ();
+            // continue;
+          }
+        }, 1000)
       }
 
+      // for (var i = 0; i < 10; i++) {
+      //   console.log(hh++);
+      // };
 
-      // setTimeout (hexclock,1000);
+      // document.write(clockFormat);
+
+      // for (var i = 0; i < 10; i++) {
+        // console.log(ss++);
+
+      // };
+
+      // setTimeout (ss++,1000);
+
+      var x = 1;
+
     </script>
   </body>
 </html>
