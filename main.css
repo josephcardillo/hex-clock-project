@@ -1,14 +1,75 @@
 .hexFormat {
   color: white;
-  font-size: 60px;
-  display: block;
+  font-size: 250px;
+  width: 80%;
+  margin: 0 auto;
+  /* display: block; */
   border: solid;
   border-width: thick;
   text-align: center;
-  width: 50%;
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  /* font-family: 'Gloria Hallelujah', cursive; */
+  box-shadow: 10px 10px 10px 5px red;
+  /* margin: auto;
+  position: absolute;
+  width: 250px;
+  height: 150px; */
+  /* top: 25%;
+  left: 25%; */
 }
 
 .divBackColor {
   background-color: black;
+}
+
+.container {
+  width: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .hexFormat {
+  color: white;
+  font-size: 200px;
+  /* display: block; */
+  border: solid;
+  border-width: thick;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hexFormat {
+  color: white;
+  font-size: 100px;
+  /* display: block; */
+  border: solid;
+  border-width: thick;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hexFormat {
+  color: white;
+  font-size: 50px;
+  /* display: block; */
+  border: solid;
+  border-width: thick;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'VT323', monospace;
+  }
 }
