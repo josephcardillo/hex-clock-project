@@ -16,19 +16,87 @@
       var clockFormat = [numSign,hh,mm,ss];
       var clockId = document.getElementsByClassName("hhmmss");
 
-      function hexclock () {
-        // var hh = today.getHours();
+
+      // function incrementSecond() {
+      //   setTimeout(function() {
+      //       for (var ss = 1; ss <= 1; ss++);
+      //       console.log(ss);
+      //       // ss = 1;
+      //       // ss++;
+      //       if (ss = 1) {
+      //         incrementMinute();
+      //       }
+      //     }, 1000)
+      //   }
+      //
+      //   function incrementMinute() {
+      //     setTimeout(function() {
+      //       for (var mm = 1; mm <= 1; mm++);
+      //       console.log(mm++);
+      //       // mm = 1;
+      //       // mm++;
+      //       if (mm = 1) {
+      //         incrementHour();
+      //       }
+      //     }, 1000)
+      //   }
+      //
+      //   function incrementHour() {
+      //     setTimeout(function() {
+      //       for (var hh = 1; hh <= 1; hh++);
+      //       console.log(hh++);
+      //       // hh = 1;
+      //       // hh++;
+      //       if (hh = 1) {
+      //         incrementSecond();
+      //       }
+      //     }, 1000)
+      //   }
+
+
+
+      // seconds++
+      // if seconds >= 60: reset to 0 and call incrementMinutes()
+
+
+      // Every Second:
+      //     Call incrementSecond() which will handle adding a second to the clock, and may call incrementMinute() which may call incrementHour() as necessary
+      //     Update the user interface once all that's resolved. This could be updateVisualClock() or whatever, but it should get the variables and build the hex code string, as well as set the background or whatever you need visually.
+
+
+      function hexSec () {
+        setTimeout(function () {
+          console.log(ss++);
+          if (ss < 7) {
+            hexSec ();
+          } else if (ss > 5) {
+              hexMin ();
+            }
+          }, 1000)
+        }
+
+      function hexMin () {
+        setTimeout(function () {
+          console.log(mm++);
+          if (mm < 7) {
+            hexMin ();
+          } else if (mm > 5) {
+              hexHour ();
+            }
+          }, 60000)
+        }
+
+      function hexHour () {
         setTimeout(function () {
           console.log(hh++);
-          i = 0;
-          i++;
-          if (hh < 6) {
-            hexclock ();
-            // continue;
-          }
-        }, 1000)
-      }
-
+          if (hh < 7) {
+            hexHour ();
+          // } else if (hh = 6) {
+          //     hexHour ();
+          //   }
+            }
+          }, 3600000)
+        }
       // for (var i = 0; i < 10; i++) {
       //   console.log(hh++);
       // };
@@ -41,8 +109,6 @@
       // };
 
       // setTimeout (ss++,1000);
-
-      var x = 1;
 
     </script>
   </body>
