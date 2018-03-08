@@ -3,7 +3,6 @@
   font-size: 250px;
   width: 80%;
   margin: 0 auto;
-  /* display: block; */
   border: solid;
   border-width: thick;
   text-align: center;
@@ -13,12 +12,6 @@
   font-family: 'VT323', monospace;
   /* font-family: 'Gloria Hallelujah', cursive; */
   box-shadow: 10px 10px 10px 5px red;
-  /* margin: auto;
-  position: absolute;
-  width: 250px;
-  height: 150px; */
-  /* top: 25%;
-  left: 25%; */
 }
 
 .divBackColor {
@@ -33,7 +26,6 @@
   .hexFormat {
   color: white;
   font-size: 200px;
-  /* display: block; */
   border: solid;
   border-width: thick;
   text-align: center;
@@ -48,7 +40,6 @@
   .hexFormat {
   color: white;
   font-size: 100px;
-  /* display: block; */
   border: solid;
   border-width: thick;
   text-align: center;
@@ -63,7 +54,6 @@
   .hexFormat {
   color: white;
   font-size: 50px;
-  /* display: block; */
   border: solid;
   border-width: thick;
   text-align: center;
