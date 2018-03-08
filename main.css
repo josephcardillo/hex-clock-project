@@ -1,3 +1,14 @@
-/* .background-color {
-  background-color: '#time';
-} */
+.hexFormat {
+  color: white;
+  font-size: 60px;
+  display: block;
+  border: solid;
+  border-width: thick;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.divBackColor {
+  background-color: black;
+}

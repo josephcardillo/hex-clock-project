@@ -7,10 +7,13 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     var color = numSign+h+m+s;
-    document.getElementById('time').innerHTML =
-    numSign + "" + h + "" + m + "" + s;
+    document.getElementById("time").innerHTML = color
+
+    // numSign + "" + h + "" + m + "" + s;
+
     var t = setTimeout(startTime, 1000);
-    console.log(color);
+    document.body.style.background = color;
+    // document.getElementById("backColor").innerHTML = color;
 }
 
 function checkTime(i) {
